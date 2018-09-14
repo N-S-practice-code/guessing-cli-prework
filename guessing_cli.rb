@@ -4,7 +4,7 @@ def run_guessing_game
   n=rand(6)+1
   input = gets.chomp
   return exit_game if input = "exit"
-  puts 
+  puts "You guessed the correct number!"
 end
 
 def exit_game
