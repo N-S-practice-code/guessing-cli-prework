@@ -4,6 +4,7 @@ def run_guessing_game
   n=rand(6)+1
   input = gets.chomp
   return exit_game if input = "exit"
+  if input >="1"
   puts "You guessed the correct number!" if 
   puts "The computer guessed #{n}."
 end
