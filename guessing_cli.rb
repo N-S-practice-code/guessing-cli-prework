@@ -6,7 +6,9 @@ def run_guessing_game
   return exit_game if input = "exit"
 end
 
-def exit game
+def exit_game
+  puts ""
+end
 
 def help
   puts """I accept the following commands:
