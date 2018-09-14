@@ -3,8 +3,10 @@ def run_guessing_game
   puts "Guess a number between 1 and 6."
   n=rand(6)+1
   input = gets.chomp
-  return exit_jukebox if input = "exit"
+  return exit_game if input = "exit"
 end
+
+def exit game
 
 def help
   puts """I accept the following commands:
