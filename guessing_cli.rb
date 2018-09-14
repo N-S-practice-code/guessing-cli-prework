@@ -3,6 +3,7 @@ def run_guessing_game
   puts "Guess a number between 1 and 6."
   n=rand(1..6)
   input = gets.chomp
+  return exit_game if input = "exit"
   if input >="1" and input <= "6"
     if input.to_i==n
       puts "You guessed the correct number!" if input.to_i==n
@@ -10,7 +11,6 @@ def run_guessing_game
       puts "The computer guessed #{n}."
     end
   end
-  return exit_game if input = "exit"
   run_guessing_game
 end
 
