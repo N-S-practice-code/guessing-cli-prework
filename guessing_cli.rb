@@ -6,9 +6,10 @@ def run_guessing_game
   return exit_game if input = "exit"
   puts "You guessed the correct number!"
   puts "The computer guessed #{n}."
+end
 
 def exit_game
-  puts ""
+  puts "Goodbye!"
 end
 
 def help
